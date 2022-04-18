@@ -1,0 +1,51 @@
+form {
+  margin: 35px;
+}
+h1 {
+  padding: 30px;
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  padding: 30px;
+  font-size: 40px;
+}
+
+h3 {
+  padding: 20px;
+  margin: 8px;
+  border: #ff895d;
+  border-style: solid;
+  border-radius: 30px;
+}
+.container {
+  text-align: center;
+  max-width: 800px;
+  padding: 20px;
+  background: linear-gradient(to bottom, #f2f3f5 0%, #c7c8c9 100%);
+  color: #005689;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.search-button {
+  background: #ff895d;
+  font-weight: bold;
+  padding: 0, 20px, 0, 20px;
+}
+.location-button {
+  background: #ff895d;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.today-icon,
+.today-temp {
+  font-size: 80px;
+}
+.temp-celsius-link {
+  text-decoration: none;
+}
+.temp-farenheit-link {
+  text-decoration: none;
+}
