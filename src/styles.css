@@ -19,10 +19,14 @@ h3 {
   border-style: solid;
   border-radius: 30px;
 }
+
+h5 {
+  text-align: center;
+}
 .container {
   text-align: center;
   max-width: 800px;
-  padding: 20px;
+  padding: 10px;
   background: linear-gradient(to bottom, #f2f3f5 0%, #c7c8c9 100%);
   color: #005689;
   font-family: "Josefin Sans", sans-serif;
