@@ -64,7 +64,7 @@ function showTemperature(response) {
   let currentLocation = response.data.name;
   let cityName = document.querySelector("h1");
   cityName.innerHTML = currentLocation;
-  let iconElement = document.querySelector(".today-icon");
+  let iconElement = document.querySelector("#today-icon");
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`

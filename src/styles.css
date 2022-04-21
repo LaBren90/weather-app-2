@@ -3,13 +3,13 @@ form {
 }
 h1 {
   padding: 30px;
-  font-size: 80px;
-  margin-bottom: 20px;
+  font-size: 72px;
+  margin-bottom: 10px;
 }
 
 h2 {
-  padding: 30px;
-  font-size: 40px;
+  padding: 15px;
+  font-size: 36px;
 }
 
 h3 {
@@ -43,8 +43,9 @@ h5 {
   margin: 10px;
 }
 
-.today-icon {
-  width: 150px;
+#today-icon {
+  width: 180px;
+  vertical-align: left;
 }
 
 .today-temp {
