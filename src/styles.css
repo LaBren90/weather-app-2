@@ -67,6 +67,10 @@ ul::first-letter {
   text-decoration: none;
 }
 
+.active:hover {
+  color: #005689;
+}
+
 .last-update {
   font-size: 14px;
 }
