@@ -71,6 +71,15 @@ function showTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+  let condition = response.data.weather[0].description;
+  let conditionElement = document.querySelector("#condition");
+  conditionElement.innerHTML = condition;
+  let windSpeed = response.data.wind.speed;
+  let windSpeedElement = document.querySelector("#wind-speed");
+  windSpeedElement.innerHTML = Math.round(windSpeed);
+  let humidity = response.data.main.humidity;
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = Math.round(humidity);
 }
 
 function cityClick(event) {
