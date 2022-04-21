@@ -103,6 +103,8 @@ function changeToFarenheit(event) {
   let tempInFarenheit = (celsiusTemperature * 9) / 5 + 32;
   let currentTemp = document.querySelector(".today-temp");
   currentTemp.innerHTML = Math.round(tempInFarenheit);
+  tempCelsiusLink.classList.remove("active");
+  tempFarenheitLink.classList.add("active");
 }
 
 let tempFarenheit = document.querySelector(".temp-farenheit");
@@ -111,10 +113,15 @@ tempFarenheit.addEventListener("click", changeToFarenheit);
 function changeToCelsius(event) {
   let currentTemp = document.querySelector(".today-temp");
   currentTemp.innerHTML = Math.round(celsiusTemperature);
+  tempCelsiusLink.classList.add("active");
+  tempFarenheitLink.classList.remove("active");
 }
 
 let tempCelsius = document.querySelector("#temp-celsius");
 tempCelsius.addEventListener("click", changeToCelsius);
+
+let tempCelsiusLink = document.querySelector("#temp-celsius-link");
+let tempFarenheitLink = document.querySelector(".temp-farenheit-link");
 
 let celsiusTemperature = null;
 

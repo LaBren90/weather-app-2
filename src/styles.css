@@ -60,15 +60,11 @@ ul::first-letter {
 .today-temp {
   font-size: 80px;
 }
-#temp-celsius-link {
-  text-decoration: none;
-}
-.temp-farenheit-link {
-  text-decoration: none;
-}
 
-.today-temp.active {
+.active {
   color: #005689;
+  cursor: default;
+  text-decoration: none;
 }
 
 .last-update {
