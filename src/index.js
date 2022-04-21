@@ -104,7 +104,7 @@ function changeToCelsius(event) {
   currentTemp.innerHTML = Math.round(celsiusTemperature);
 }
 
-let tempCelsius = document.querySelector(".temp-celsius");
+let tempCelsius = document.querySelector("#temp-celsius");
 tempCelsius.addEventListener("click", changeToCelsius);
 
 let celsiusTemperature = null;
