@@ -23,6 +23,11 @@ h3 {
 h5 {
   text-align: center;
 }
+
+ul {
+  font-size: 22px;
+  list-style: none;
+}
 .container {
   text-align: center;
   max-width: 800px;
