@@ -43,7 +43,10 @@ h5 {
   margin: 10px;
 }
 
-.today-icon,
+.today-icon {
+  width: 150px;
+}
+
 .today-temp {
   font-size: 80px;
 }
