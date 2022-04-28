@@ -75,10 +75,10 @@ ul::first-letter {
   font-size: 14px;
 }
 
-.min {
-  font-size: 12px;
+#min {
+  text-align: right;
+  font-size: 24px;
 }
-
-.max {
-  font-size: 12px;
+#max {
+  font-size: 24px;
 }
