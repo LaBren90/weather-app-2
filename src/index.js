@@ -104,32 +104,6 @@ let citySearch = document.querySelector("#search-form");
 citySearch.addEventListener("submit", citySubmit);
 citySearch.addEventListener("click", cityClick);
 
-function changeToFarenheit(event) {
-  event.preventDefault();
-  let tempInFarenheit = (celsiusTemperature * 9) / 5 + 32;
-  let currentTemp = document.querySelector(".today-temp");
-  currentTemp.innerHTML = Math.round(tempInFarenheit);
-  tempCelsiusLink.classList.remove("active");
-  tempFarenheitLink.classList.add("active");
-}
-
-let tempFarenheit = document.querySelector(".temp-farenheit");
-tempFarenheit.addEventListener("click", changeToFarenheit);
-
-function changeToCelsius(event) {
-  let currentTemp = document.querySelector(".today-temp");
-  currentTemp.innerHTML = Math.round(celsiusTemperature);
-  tempCelsiusLink.classList.add("active");
-  tempFarenheitLink.classList.remove("active");
-}
-
-let tempCelsius = document.querySelector("#temp-celsius");
-tempCelsius.addEventListener("click", changeToCelsius);
-
-let tempCelsiusLink = document.querySelector("#temp-celsius-link");
-let tempFarenheitLink = document.querySelector(".temp-farenheit-link");
-
-let celsiusTemperature = null;
 function displayForecast(response) {
   let forecast = response.data.daily;
   let forecastELement = document.querySelector("#weather-forecast");
@@ -147,7 +121,7 @@ function displayForecast(response) {
           <div class="col-4">
             <img id="forecast-icon" src="http://openweathermap.org/img/wn/${
               forecastDay.weather[0].icon
-            }@2x.png" alt="Sun" width = 60px height = 60px/>
+            }@2x.png" alt="Sun" width = 50px height = 50px/>
           </div>
           <div class="col-2" id = "forecast-temp-min">${Math.round(
             forecastDay.temp.min
