@@ -163,3 +163,11 @@ function useCurrentLocation(event) {
 
 let currentLocationButton = document.querySelector("#current-location-form");
 currentLocationButton.addEventListener("click", useCurrentLocation);
+
+function displayDefault() {
+  let cityName = "London";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric`;
+  axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemperature);
+}
+
+displayDefault();
