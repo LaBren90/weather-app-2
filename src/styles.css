@@ -74,3 +74,11 @@ ul::first-letter {
 .last-update {
   font-size: 14px;
 }
+
+.min {
+  font-size: 12px;
+}
+
+.max {
+  font-size: 12px;
+}
